@@ -13,7 +13,6 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    margin-right: 15%;
     background-image: url(images/cbackground.png);
     background-repeat: no-repeat;
     background-position: right;
@@ -99,7 +98,6 @@ nav ul li a:hover::after{
     font-weight: 600;
     color: #ece2e2;
 }
-
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
@@ -129,10 +127,11 @@ nav ul li a:hover::after{
     list-style-type: none;
     margin: 10px 0;
     color:#d4c7e5;
+    font-size: 17px;
 }
 .tab-contents ul li span{
-    color: #7aae31;
-    font-size: 16px;
+    color: #d31340;
+    font-size: 14px;
 }
 .tab-contents{
     display: none;
@@ -140,3 +139,5 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display:block;
 }
+
+

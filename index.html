@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ravi Raj's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <!-------------Header------------------------------------->
+    <!-----------------------------------------Header------------------------------------->
     <div id="header">
         <div class="container">
             <nav>
@@ -18,7 +19,7 @@
                     <li><a href="#">About</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
-                    <li><a href="#">Download Resume</a></li>
+                    <li><a href="images/Resume.pdf">Download Resume</a></li>
                     
                 </ul>
             </nav>
@@ -29,7 +30,7 @@
         </div>
     </div>
 
-    <!-----------------------------About---------------------->
+    <!-------------------------------------------About------------------------------------------>
     <div id="about">
         <div class="container">
             <div class="row">
@@ -51,24 +52,23 @@
                 </div>
                 <div class="tab-contents active-tab" id="education">
                     <ul>
-                        <li><span>2020-2024</span><br>B.Tech from Supaul College of Engineering, Supaul and secured 8.38 CGPA.</li>
-                        <li><span>2017-2019</span><br>Intermediate from G.D.M. College, Harnaut and secured 70%.</li>
-                        <li><span>2016-2017</span><br>Matriculation from Vivekanada Public School, Nawada and secured 10 CGPA</li>
+                        <li><span>2020 - 2024</span><br>B.Tech from Supaul College of Engineering, Supaul and secured 8.38 CGPA.</li>
+                        <li><span>2017 - 2019</span><br>Intermediate from G.D.M. College, Harnaut and secured 70%.</li>
+                        <li><span>2016 - 2017</span><br>Matriculation from Vivekanada Public School, Nawada and secured 10 CGPA</li>
                 </div>
                 <div class="tab-contents" id="skills">
                     <ul>
-                        <li><span>Front End Developement</span><br>Developement Tools: HTML5 CSS3 JavaScript<br> Frameworks: Tailwind CSS React.JS
-                                                                <br>Version Control: VS Code Git/GitHub</li>
-                        <li><span>Programming Language</span><br>C++ Java</li>
-                        <li><span>Team Leadership</span></li>
-                        <li><span>Event Management</span></li>
-                        <li><span>Trainer</span></li>
+                        <li><span>Front End Developement</span><br>HTML5, CSS3, JavaScript<br>Tailwind CSS, React.JS
+                                                                <br>Git / GitHub</li>
+                        <li><span>Programming Language</span><br>C++  Java</li>
+                        <li><span>Team Leadership, Event Management, Trainer</span></li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>2022-Current</span><br>Student Co-ordinator <br>Training and Placement Cell SCE, Supaul</li>
-                        <li><span>2021-2022</span><br>Class Representative<br>Electronics and Communication Branch SCE, Supaul</li>
+                        <li><span>2023 - Current</span><br>Associate Developer<br>CollabCue India</li>
+                        <li><span>2022 - Current</span><br>Student Co-ordinator <br>Training and Placement Cell SCE, Supaul</li>
+                        <li><span>2021 - 2022</span><br>Class Representative<br>Electronics and Communication Branch SCE, Supaul</li>
                     </ul>
                 </div>
             </div>
@@ -76,22 +76,13 @@
         </div>
     </div>
 
+<!------------------------------------------Projects----------------------------------------------->
+
+    
 
 
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
+
+
+
 </body>
 </html>

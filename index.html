@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-------------Header------------------------------------->
     <div id="header">
         <div class="container">
             <nav>
@@ -15,7 +16,6 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Download Resume</a></li>
@@ -28,16 +28,50 @@
             </div>
         </div>
     </div>
+
+    <!-----------------------------About---------------------->
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/ravi.png">
+                    <img src="images/cravi_about.png">
                 </div>
                 <div class="about-col-2">
-                    <h1>About Me</h1>
-                    
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello Vistiors!! Greetings from my side. My name is Ravi Raj. I am persuing B.Tech in department of Electronics and Communication Engineering from Supaul
+                        College of Engineering, Supaul affliated from Bihar Engineering University, Patna. I'm a passionate front-end developer skilled in HTML, CSS, and JavaScript.
+                        I've been working on various web projects, creating responsive and interactive web pages. 
+                        I love turning designs into live web experiences.
+                    </p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
                 </div>
+                <div class="tab-contents active">
+                    <ul>
+                        <li><span>2020-2024</span><br>B.Tech from Supaul College of Engineering, Supaul and secured 8.38 CGPA.</li>
+                        <li><span>2017-2019</span><br>Intermediate from G.D.M. College, Harnaut and secured 70%.</li>
+                        <li><span>2016-2017</span><br>Matriculation from Vivekanada Public School, Nawada and secured 10 CGPA</li>
+                </div>
+                <div class="tab-contents">
+                    <ul>
+                        <li><span>Front End Developement</span><br>Developement Tools: HTML5 CSS3 JavaScript<br> Frameworks: Tailwind CSS React.JS
+                                                                <br>Version Control: VS Code Git/GitHub</li>
+                        <li><span>Programming Language</span><br>C++ Java</li>
+                        <li><span>Team Leadership</span></li>
+                        <li><span>Event Management</span></li>
+                        <li><span>Trainer</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents">
+                    <ul>
+                        <li><span>Student Co-ordinator </span><br>Training and Placement Cell SCE, Supaul</li>
+                        <li><span>Class Representative</span><br>Electronics and Communication Branch SCE, Supaul</li>
+                    </ul>
+                </div>
+            </div>
             </div>
         </div>
     </div>

@@ -151,6 +151,7 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    color: #84c0cf;
 }
 
 .project-list div{

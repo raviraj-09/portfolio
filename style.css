@@ -120,7 +120,7 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 .tab-links.active-link::after{
-    width: 50%;
+    width: 100%;
 }
 
 .tab-contents ul li{
@@ -140,4 +140,47 @@ nav ul li a:hover::after{
     display:block;
 }
 
+/*-------------------------------project----------------*/
 
+#projects{
+    padding: 30px 0;
+}
+
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.project-list div{
+    background: #262626;
+    padding: 20px 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.project-list div i{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.project-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.project-list div a{
+    text-decoration: none;
+    color: fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.project-list div:hover{
+    color:#d8f5bd;
+    transform: translate(-10px);
+}
+
+/*----------------------------Contact---------------------------------*

@@ -7,6 +7,7 @@
     <title>Ravi Raj's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="sideMenu.js"></script>
     <script src="https://kit.fontawesome.com/2142d8a3e0.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -15,18 +16,22 @@
         <div class="container">
             <nav>
                 <img src="images/cravi.png" class="logo">
-                <ul>
+                <ul id="sideMenu">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="images/Resume.pdf" target="_blank">Download Resume</a></li>
-                    
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
             </nav>
             <div class="header-text">
                 <h1>Hello, I am <span>Ravi Raj</span></h1>
                 <p>Front End Developer</p>
+                <br><a href="https://www.linkedin.com/in/ravi-raj-023a75253/" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
+                <a href="https://www.facebook.com/heart.ticker.01/" target="_blank"> <i class="fa-brands fa-facebook"></i> </a>
+                <a href="https://www.instagram.com/ravi_raj.06/" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
             </div>
         </div>
     </div>
@@ -88,24 +93,25 @@
                     <img src="images/service1.jpg" >
                     <div class="layer">
                         <h3>Front-End Developement</h3>
-                        <p>Lorem ipsandae explicabo, atque, fugiat possimus voluptatum velit beatae aliquam cupiditate itaque repellendus rerum dolorem. Nostrum quam reiciendis dicta quae natus!</p>
-                        <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <p> Proficient understanding of web markup, including HTML5, CSS3, Tailwind CSS, JavaScript frameworks, including React.JS </p>
+                        <a href="#projects"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="service">
                     <img src="images/services2.jpg">
                     <div class="layer">
                         <h3>Web Technologies</h3>
-                        <p>Lorem ipsandae explicabo, atque, fugiat possimus voluptatum velit beatae aliquam cupiditate itaque repellendus rerum dolorem. Nostrum quam reiciendis dicta quae natus!</p>
-                        <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <p>Proficient understanding of code versioning tools, such as {Git / Github} <br>
+                            Good understanding of SEO principles and ensuring that application will adhere to them.</p>
+                        <a href="#projects"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="service">
                     <img src="images/service3.jpg">
                     <div class="layer">
-                        <h3>Code Review</h3>
-                        <p>Lorem ipsandae explicabo, atque, fugiat possimus voluptatum velit beatae aliquam cupiditate itaque repellendus rerum dolorem. Nostrum quam reiciendis dicta quae natus!</p>
-                        <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Debugging</h3>
+                        <p></p>
+                        <a href="#projects"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -118,48 +124,89 @@
         <div class="container">
             <h1 class="sub-title">My Projects</h1>
             <div class="project-list">
-                <div>
+                <!-- <div>
                     <img src="images/logoffg.png" height="70" width="70"></i>
                     <h2>CollabCue</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus in commodi quaerat maiores explicabo laborum, recusandae fugiat consequatur! Quaerat commodi perspiciatis cumque optio fuga eligendi totam aperiam, ipsam accusamus ab.</p>
+                    <p>CollabCue is a Platform where<br>Technologies Used: HTML5, CSS3, JavaScript, BootStrap</p>
                     <a href="https://collabcue.online/" target="_blank">Know More</a>
-                </div>
+                </div> -->
                 <div>
                     <i class="fa-solid fa-cloud"></i>
                     <h2>Weather App</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus in commodi quaerat maiores explicabo laborum, recusandae fugiat consequatur! Quaerat commodi perspiciatis cumque optio fuga eligendi totam aperiam, ipsam accusamus ab.</p>
-                    <a href="#" target="_blank">Know More</a>
+                    <p>A weather app provides real-time updates and forecasts, helping you plan your day with information on temperature, precipitation, and wind. 
+                        Its alerts ensure you're always prepared, whether it's for sunny skies or stormy weather.<br><br>
+                    Technologies Used: HTML5, CSS3, JavaScript, React.JS</p>
+                    <a href="#" target="_blank" class="btn0">visit</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-amazon"></i>
-                    <h2>Amazon clone</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus in commodi quaerat maiores explicabo laborum, recusandae fugiat consequatur! Quaerat commodi perspiciatis cumque optio fuga eligendi totam aperiam, ipsam accusamus ab.</p>
-                    <a href="https://raviraj-09.github.io/AmazonClone/" target="_blank">Know More</a>
+                    <h2>Amazon Clone</h2>
+                    <p>An Amazon clone is an e-commerce platform that mimics Amazon’s vast product selection and features like user reviews, 
+                        search, and recommendations. Developing such a site requires advanced web development skills.  <br><br>
+                        Technologies Used: HTML5, CSS3<br><br></p>
+                    <a href="https://raviraj-09.github.io/AmazonClone/" target="_blank" class="btn0">visit</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-calculator"></i>
                     <h2>Calculator</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus in commodi quaerat maiores explicabo laborum, recusandae fugiat consequatur! Quaerat commodi perspiciatis cumque optio fuga eligendi totam aperiam, ipsam accusamus ab.</p>
-                    <a href="https://raviraj-09.github.io/calculator/" target="_blank">Know More</a>
+                    <p>A calculator app involves creating a simple and user-friendly interface that allows users to perform basic to complex calculations, 
+                        implemented using technologies like HTML, CSS, and JavaScript. Addition Substraction Multiplication Division <br><br>
+                        Technologies Used: HTML5, CSS3, JavaScript<br><br></p>
+                    <a href="https://raviraj-09.github.io/calculator/" target="_blank" class="btn0">visit</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-expeditedssl"></i>
                     <h2>Explorystique</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus in commodi quaerat maiores explicabo laborum, recusandae fugiat consequatur! Quaerat commodi perspiciatis cumque optio fuga eligendi totam aperiam, ipsam accusamus ab.</p>
-                    <a href="https://raviraj-09.github.io/Explorystique/" target="_blank">Know More</a>
+                    <p>This is a blogging Website. Internet of Things(IoT) related blogs are posted here.<br>
+                        Technologies Used: HTML5, CSS3, JavaScript, Bootstrap</p>
+                    <a href="https://raviraj-09.github.io/Explorystique/" target="_blank" class="btn0">visit</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <h2>LogIn/SignUp Page</h2>
+                    <p>Facbook Login and Sign Up page designed using HTML and CSS<br><br><br></p>
+                    <a href="https://raviraj-09.github.io/facebook-login-page-clone/" target="_blank" class="btn0">visit</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>C++ Terminal Projects</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus in commodi quaerat maiores explicabo laborum, recusandae fugiat consequatur! Quaerat commodi perspiciatis cumque optio fuga eligendi totam aperiam, ipsam accusamus ab.</p>
-                    <a href="https://github.com/raviraj-09/multipurpose" target="_blank">Know More</a>
+                    <p>Tic Tac Toe Game, Casino Game, Calculator and more..<br><br><br></p>
+                    <a href="https://github.com/raviraj-09/multipurpose" target="_blank" class="btn0">visit</a>
                 </div>
             </div>
         </div>
     </div>
 
-
-
+<!---------------------------Contakt me----------------------->
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title new"> Contact Me</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <p> <i class="fa-solid fa-paper-plane"></i> raviraj225566@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 8051576272</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ravi-raj-023a75253/" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
+                        <a href="https://github.com/raviraj-09" target="_blank"> <i class="fa-brands fa-github"></i> </a>
+                        <a href="https://www.facebook.com/heart.ticker.01/" target="_blank"> <i class="fa-brands fa-facebook"></i> </a>
+                        <a href="https://www.instagram.com/ravi_raj.06/" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
+                    </div>
+                    <a href="images/Resume.pdf" download class="btn">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="email" placeholder="Enter your E-mail" required>
+                        <textarea name="message" rows="5" placeholder="Enter Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Ravi Raj Designed by <i class="fa-brands fa-web-awesome"></i> Ravi Raj</p>
+        </div>
+    </div>
 
 </body>
 </html>

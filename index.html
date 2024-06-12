@@ -8,23 +8,29 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/2142d8a3e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    
 </head>
 <body>
     <!-----------------------------------------Header------------------------------------->
     <div id="header">
         <div class="container">
-            <nav>
-                <img src="images/cravi.png" class="logo">
-                <ul id="sideMenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
-            </nav>
+            <div class="navbar" id="myNavbar">
+                 <img src="images/cravi.png" class="logo">
+                <div class="menu" id="navMenu">
+                 <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact Me</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+
+
             <div class="header-text">
                 <h1>Hello, I am <span>Ravi Raj</span></h1>
                 <p>Front End Developer</p>

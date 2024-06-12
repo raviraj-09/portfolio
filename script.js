@@ -12,13 +12,16 @@ function opentab(tabname){
     document.getElementById(tabname).classList.add("active-tab");
 }
 
-var sidemenu = document.getElementById("sideMenu");
-function openMenu() {
-    sidemenu.style.right = "0";
+function toggleMenu() {
+    var navbar = document.getElementById("myNavbar");
+    var menu = document.getElementById("navMenu");
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+    }
 }
-function closeMenu() {
-    sidemenu.style.right = "-200px";
-}
+
 
 
 //   const scriptURL = 'https://script.google.com/macros/s/AKfycbzGkeUXMl4mDfSxdnG6-Qyx1Xp1GYK0K0U__BajZL3nchQ-JXBEbmR2tCBYrUbCsEy-/exec'
